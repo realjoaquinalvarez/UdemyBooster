@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Udemy Booster</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Udemy Booster</h2>
+    
+    <!-- Auto-Refresh Toggle -->
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-auto-refresh">
+        <span class="slider round"></span>
+      </label>
+      <span class="label-text">Auto-Refresh</span>
+    </div>
+    <span id="status-auto-refresh" class="status-text">Activated</span>
+    <p class="description">
+      Prevents the bug that makes you listen to 32 audio tracks at the same time.<br>
+      Evita el bug que te hace escuchar 32 pistas de audio a la vez.
+    </p>
+
+    <!-- Hide Bar Toggle -->
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-hide-bar">
+        <span class="slider round"></span>
+      </label>
+      <span class="label-text">Hide Bar <span class="shortcut">(Shortcut: "v")</span></span>
+    </div>
+    <span id="status-hide-bar" class="status-text">Deactivated</span>
+    <p class="description">
+      Hides the playback bar and prevents its errors.<br>
+      Oculta la barra de reproducción y evita sus errores.
+    </p>
+
+    <!-- Auto-Focus Toggle -->
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="toggle-auto-focus">
+        <span class="slider round"></span>
+      </label>
+      <span class="label-text">Auto-Focus</span>
+    </div>
+    <span id="status-auto-focus" class="status-text">Deactivated</span>
+    <p class="description">
+      English: Thanks to this feature, you don't need to click the video to use your keyboard shortcuts again.<br>
+      Español: Gracias a esta funcionalidad no necesitas darle click al video para volver a usar tus atajos de teclado.
+    </p>
+
+    <!-- Show/Hide All In-Page Buttons -->
+    <h3>Show/Hide All In-Page Buttons</h3>
+    <button id="toggle-show-buttons" class="action-button">Hide All Buttons</button>
+
+    <!-- Individual Toggle Buttons -->
+    <div class="small-buttons-container">
+      <button id="toggle-show-auto-refresh-button" class="small-button">1</button>
+      <button id="toggle-show-hide-bar-button" class="small-button">2</button>
+      <button id="toggle-show-auto-focus-button" class="small-button">3</button>
+    </div>
+
+    <div>
+      <p>With 🖤 by: @realjoaquinalvarez</p>
+    </div>
+    
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

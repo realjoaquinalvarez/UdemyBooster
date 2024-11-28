@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Udemy Booster",
+  "version": "1.6",
+  "description": "Enhances Udemy by auto-reloading lessons, hiding playback controls, maintaining focus on the video, and allowing customization of in-page buttons. Control these features from the popup or directly on the page.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.udemy.com/course/*/learn/lecture/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
